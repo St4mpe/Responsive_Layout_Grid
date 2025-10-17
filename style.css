@@ -1,33 +1,47 @@
 body{
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     margin: 0;
     padding: 0;
-  background: #222;
-  color: #fff;
+    background: #222;
+    color: #fff;
 }
 header{
   display: grid;
   place-content: center;
   font-size:32px;
-  padding:1rem;
+  padding:1.5rem;
 }
 h1{
   margin:0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #333;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    user-select: none;
 }
 .main{
   display:grid;
   grid-auto-rows:min-max(200px, 1fr);
   gap:1rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
+  padding-top: 1rem;
 }
 .gridBox{
   width:calc(100% - 1.6em);
   background: #fff;
   color:#000;
   padding:.8em;
-  height: 250px;
+  min-height: 200px;
   border-radius:0.5rem;
 }
 @media screen and (min-width:550px){
