@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  background: #222;
+  color: #fff;
+}
+header{
+  display: grid;
+  place-content: center;
+  font-size:32px;
+  padding:1rem;
+}
+h1{
+  margin:0;
+}
+.main{
+  display:grid;
+  grid-auto-rows:min-max(200px, 1fr);
+  gap:1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.gridBox{
+  width:calc(100% - 1.6em);
+  background: #fff;
+  color:#000;
+  padding:.8em;
+  height: 250px;
+  border-radius:0.5rem;
+}
+@media screen and (min-width:550px){
+  .main{
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media screen and (min-width:800px){
+  .main{
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+@media screen and (min-width:1100px){
+  .main{
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
